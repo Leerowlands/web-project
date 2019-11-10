@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<title>home page</title>
+	
+    
+    <link rel="stylesheet" href="css/master.css">
+    
+    <script>
+        function form_handler() {
+            var q1=document.querySelector('input[name="q1"]:checked').value;
+            var q2=document.querySelector('input[name="q2"]:checked').value;
+            var q3=document.querySelector('input[name="q3"]:checked').value;
+            
+            
+            localStorage.setItem('q1', q1);
+            localStorage.setItem('q2', q2);
+            localStorage.setItem('q3', q3);
+            alert("Your selctions have been stored");
+        }
+    </script>
+	
+	
+</head>
+
+<body>
+
+	
+	<div id="header">
+		<img id="logo" src="images/ufc1.png" 
+		width="286" height="170" alt="ufc" border="0">
+        
+        <div id="menu">
+            <a href="index.html">Home </a> |
+            <a href="about.html"> About </a> |
+            <a href="gallery.html"> Gallery</a>
+        
+        </div>
+	</div>
+    
+    <div id="sidebar-a">
+		<h1>Quiz</h1>
+        
+        <form onsubmit="return form_handler()">
+            <p>How many fights has George St-Pierre won?</p>
+       
+            <p><input type="radio" name="q1" value="22" checked="checked"> 22</p>
+       
+            <p><input type="radio" name="q1" value="27"> 27</p>
+       
+            <p><input type="radio" name="q1" value="26"> 26</p>
+        
+            <br>
+       
+        
+            <p>Who did GSP last lose to?</p>
+       
+            <p><input type="radio" name="q2" value="Matt Serra" checked="checked"> Matt Serra</p>
+       
+            <p><input type="radio" name="q2" value="Carlos Condit"> Carlos Condit</p>
+       
+            <p><input type="radio" name="q2" value="Matt Hughes"> Matt Hughes</p>
+        
+            <br>
+        
+            <p>When did GSP debut in the ufc?</p>
+       
+            <p><input type="radio" name="q3" value="46" checked="checked"> ufc 46</p>
+       
+            <p><input type="radio" name="q3" value="42"> ufc 42</p>
+       
+            <p><input type="radio" name="q3" value="43"> ufc 43</p>
+        
+            <p><input type="submit"></p>
+        </form>    
+	</div>
+	
+	<div id="content">
+	   <div class="padding">
+        
+        <br>
+		
+        <h2>Georges St-Pierre fighter profile</h2>
+        <img src="images/gsp.png" 
+		width="220" height="308" alt="ufc" border="0">
+        <p>Georges St-Pierre born May 19, 1981 is a retired Canadian professional mixed martial artist. He is widely regarded as one of the greatest fighters in mixed martial arts (MMA) history. He is a <strong>two-division champion</strong> in the Ultimate Fighting Championship (UFC) having won titles in the welterweight and middleweight divisions.</p>
+
+        <p>St-Pierre is a three-time former UFC Welterweight Champion, having won the title twice and the interim title once between November 2006 and April 2008. St-Pierre was ranked as the #1 welterweight in the world for several years by Sherdog and numerous other publications. In 2008, 2009 and 2010 he was named the Canadian Athlete of the Year by Rogers Sportsnet. Fight Matrix lists him as the top MMA Welterweight of all time and most accomplished fighter in MMA history.</P>
+
+        <p>He retired as the reigning Welterweight Champion on December 13, 2013, having held the record for most wins in title bouts and the second longest combined title streak in UFC history (2,204 days) while defending his title nine consecutive times. He returned to the Octagon in November 2017 at UFC 217, when he defeated Michael Bisping by submission to win the Middleweight title, thus becoming the fourth fighter in the history of the UFC to be a multi-division champion.</p>
+        
+		
+	   </div>
+	</div>
+	
+	<div id="footer">
+        <div 
+            id="altnav">
+        </div>
+        
+	   <div id="copyright">
+	   Copyright &copy; UFC fan page by L Rowlands
+	   </div>
+	</div>
+
+</body>
+</html>
