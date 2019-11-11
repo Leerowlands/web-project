@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Build') nodejs {
             steps {
-                Build 'server.js'
+                
             }
         }
         stage ('Test') {
