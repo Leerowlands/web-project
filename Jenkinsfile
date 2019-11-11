@@ -11,7 +11,7 @@ pipeline {
         }
         stage ('Build node')  {
             steps {
-              
+                install 'nodejs'
             }      
         }
         stage ('Test') {
