@@ -1,10 +1,8 @@
 pipeline {
     agent any
     stages {
-        stage ('nodejs')  {
-            steps {
-                
-            }
+        stage ('Build nodejs')  {
+            
         }
         stage ('Test') {
             steps {
