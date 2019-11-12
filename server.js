@@ -7,4 +7,4 @@ http.createServer(function (req, res){
     res.end();
   });
 
-}).listen(3001);
+}).listen(3000);

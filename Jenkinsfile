@@ -7,11 +7,7 @@ pipeline {
                 sh 'node server.js'
             }      
         }
-        stage('Install dependencies') {
-            steps {
-                sh 'npm install'
-            }
-        }
+        
         
     }
 
