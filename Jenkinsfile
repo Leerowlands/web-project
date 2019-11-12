@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('Build')  {
             steps {
-                sh node.js       
+                sh node server.js       
                 
             }      
         }
