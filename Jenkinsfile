@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage ('Build node')  {
+        stage ('Build')  {
             steps {
                 sh 'nodejs install'
             }      
