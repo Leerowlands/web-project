@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('Build')  {
             steps {
-                sh 'nodejs install'
+                sh 'node server.js'
             }      
         }
         stage('Install dependencies') {
