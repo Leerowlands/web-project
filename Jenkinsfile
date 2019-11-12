@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'package.json'
+        sh 'npm start'
       }
     }
         
