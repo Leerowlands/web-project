@@ -4,6 +4,11 @@ pipeline {
   tools {nodejs "server"}
     
   stages {
+    stage('Build') {
+      steps {
+        sh 'nodejs install'
+      }
+    }
         
     stage('Install dependencies') {
       steps {
