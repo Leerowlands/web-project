@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage ('Build')  {
             steps {
-                bat 'node server.js'
+                sh 'node server.js'
             }      
         }
         stage('Install dependencies') {
             steps {
-                bat 'npm install'
+                sh 'npm install'
             }
         }
         
