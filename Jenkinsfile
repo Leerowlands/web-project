@@ -9,7 +9,8 @@ pipeline {
         }
         stage('Build'){
             steps{
-                bat 'npm run "C:\\Users\\STUDENT\\Documents\\web-project\\node.js"'
+                bat 'cd C:\\Users\\STUDENT\\Documents\\web-project'
+                bat 'npm run node.js'
           }
         }
         
