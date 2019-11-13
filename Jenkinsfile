@@ -7,6 +7,6 @@ pipeline {
                 bat 'npm start'
             }
         }
-        stage()
+        
     }  
 }   
