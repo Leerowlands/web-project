@@ -14,7 +14,7 @@
         }
         stage('Deploy') {
             steps {
-                bat 'xcopy -E ./ C:\\xampp\\htdocs\\'
+                bat 'xcopy "C:\Program Files (x86)\Jenkins\workspace\webpage" C:\\xampp\\htdocs\\ /e /s' 
             }
         }
         stage('cleaning'){
