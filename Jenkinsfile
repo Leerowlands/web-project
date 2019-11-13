@@ -1,18 +1,21 @@
-pipeline {
+ pipeline {
     agent any
+
     stages {
-        stage('Install dependencies') { 
+        stage('Build') {
             steps {
-                bat 'npm install' 
-                
+                echo 'Building..'
             }
         }
-        stage('Build'){
-            steps{
-                bat 'cd C:\\Users\\STUDENT\\Documents\\web-project'
-                bat 'node node.js'
-          }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
         }
-        
-    }  
-}   
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
