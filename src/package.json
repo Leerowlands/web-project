@@ -2,7 +2,7 @@
   "name": "web-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Leerowlands/web-project.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "LRowlands",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Leerowlands/web-project/issues"
