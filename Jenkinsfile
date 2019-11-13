@@ -7,9 +7,9 @@ pipeline {
                 
             }
         }
-        stage('Test'){
+        stage('Build'){
           steps{
-            echo 'Testing'
+            bat 'npm run node.js'
           }
         }
         
