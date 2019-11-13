@@ -14,7 +14,7 @@
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                bat 'copy * C:\\xampp\\htdocs\\'
             }
         }
         stage('cleaning'){
