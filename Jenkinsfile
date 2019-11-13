@@ -8,8 +8,8 @@ pipeline {
             }
         }
         stage('Build'){
-          steps{
-            'npm run node.js'
+            steps{
+                bat 'npm run node.js'
           }
         }
         
