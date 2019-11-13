@@ -17,5 +17,10 @@
                 echo 'Deploying....'
             }
         }
+        stage('cleaning'){
+            steps {
+                cleanWs()
+            }
+        }
     }
 }
