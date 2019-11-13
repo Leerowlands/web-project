@@ -14,7 +14,7 @@
         }
         stage('Deploy') {
             steps {
-                bat 'xcopy /E ./ C:\\xampp\\htdocs\\'
+                bat 'xcopy -E ./ C:\\xampp\\htdocs\\'
             }
         }
         stage('cleaning'){
