@@ -17,10 +17,10 @@
                 bat 'xcopy "C:\\Program Files (x86)\\Jenkins\\workspace\\webpage" C:\\xampp\\htdocs\\ /e /s /y' 
             }
         }
-        stage('cleaning'){
+        /*stage('cleaning'){
             steps {
-                //cleanWs()
+                cleanWs()
             }
-        }
+        }*/
     }
 }
