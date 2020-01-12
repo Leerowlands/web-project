@@ -31,9 +31,10 @@ pipeline {
 
     success {
         echo "SUCCESS"
+        env.ForEmailPlugin = env.WORKSPACE
         emailext to:'leerowlands30@yahoo.co.uk',
         subject: env.JOB_NAME,
-        body: '''Webproject is running!!'''
+        body: '''${SCRIPT, template="lee.template"}'''
         }
 
     failure { 
