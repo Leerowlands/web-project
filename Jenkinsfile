@@ -31,7 +31,7 @@ pipeline {
 
     success {
         echo "SUCCESS"
-        emailext to:'lee.rowlands30@yahoo.co.uk',
+        emailext to:'leerowlands30@yahoo.co.uk',
         subject: env.JOB_NAME,
         body: '''Webproject is running!!'''
         }
