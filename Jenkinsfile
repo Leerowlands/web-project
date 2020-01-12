@@ -1,4 +1,4 @@
- pipeline {
+pipeline {
     agent any
 
     stages {
@@ -22,27 +22,23 @@
                 cleanWs()
             }
         }*/
-     
-         post {
-            aborted {
-                echo "ABORTED"
+    } 
+    post {
+        aborted {
+            echo "ABORTED"
 
-            }
+        }
 
-         success {
+    success {
+        echo "SUCCESS"
+        emailext to:'lee.rowlands30@yahoo.co.uk',
+        subject: env.JOB_NAME,
+        body: '''Webproject is running!!'''
+        }
 
-             echo "SUCCESS"
-             emailext to:'lee.rowlands30@yahoo.co.uk',
-             subject: env.JOB_NAME,
-
-             body: '''Webproject is running!!'''
-            }
-
-            failure { 
-
-                echo "FAILURE"
-
-            }
+    failure { 
+        echo "FAILURE"
+        }
     }
 }
-}  
+  
