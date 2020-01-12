@@ -24,9 +24,7 @@
         }*/
      
          post {
-
             aborted {
-
                 echo "ABORTED"
 
             }
@@ -34,15 +32,10 @@
          success {
 
              echo "SUCCESS"
-
              emailext to:'lee.rowlands30@yahoo.co.uk',
-
              subject: env.JOB_NAME,
 
              body: '''Webproject is running!!'''
-
-                
-
             }
 
             failure { 
