@@ -32,10 +32,10 @@ pipeline {
     success {
         echo "SUCCESS"
         //env.ForEmailPlugin = env.WORKSPACE
-        //emailext ,
+        emailext to:'leerowlands30@yahoo.co.uk',
         subject: env.JOB_NAME,
-        body: '''${SCRIPT, template="lee.template"}''',
-    }   to:'leerowlands30@yahoo.co.uk'
+        body: '''${SCRIPT, template="lee.template"}'''
+    }   
 
     failure { 
         echo "FAILURE"
